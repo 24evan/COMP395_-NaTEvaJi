@@ -1,1 +1,2 @@
-# COMP395_-NaTEvaJi
+# COMP395_Project1-NaTEvaJi
+Single-Queue Simulation
