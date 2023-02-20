@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9132648252108658547}
   - component: {fileID: 1528567727515312594}
   - component: {fileID: 5655044944095685401}
-  - component: {fileID: 1740627480612495903}
+  - component: {fileID: 4702658460815975577}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Customer
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1740627480612495903
+--- !u!136 &4702658460815975577
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

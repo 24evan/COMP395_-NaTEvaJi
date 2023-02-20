@@ -12,6 +12,7 @@ public class ArrivalProcess : MonoBehaviour
     public float arrivalRateInCustomersPerMin; //Lambda
 
     public bool isSimulationRunning = true;
+    public int timeScaling = 5;
 
     public List<GameObject> queue = new List<GameObject>();
 
@@ -38,8 +39,8 @@ public class ArrivalProcess : MonoBehaviour
             queue.Add(customerGO);
 
             float nextArrivalTimeInMin = Utilities.GetExpDistValue(arrivalRateInCustomersPerMin);
-            float nextArrivalTimeInSec = nextArrivalTimeInMin * 60f;
-            print("nextArrivalTimeInSec=" + nextArrivalTimeInSec);
+            float nextArrivalTimeInSec = nextArrivalTimeInMin * 60f/ timeScaling;
+            print("Scaled_NextArrivalTimeInSec=" + nextArrivalTimeInSec);
             yield return new WaitForSeconds(nextArrivalTimeInSec);
         }
 
